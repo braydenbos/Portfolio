@@ -14,7 +14,7 @@ body{
     font-size: 16px;
     width: 100%;
     font-family: sans-serif;
-    background:linear-gradient(#34568B,#0b111c);
+    background-color:#0b111c;
     overflow-x: hidden;
     color: white;
 }
@@ -58,8 +58,9 @@ section:first-of-type{
 }
 
 h1{
+  color: #e3b96b;
   font-size: 5vw;
-  border-left: solid 2px white;
+  border-left: solid 2px #e3b96b;
   padding-left: 5px ;
   width: 50vw;
   margin-top: 10px;
@@ -83,6 +84,7 @@ h1{
 width: 45vw;
 height: 12vw;
 border-radius: 20px;
+border: solid #E6D7BB 2px;
 background-color: #e3b96b;
 margin-top: 35px;
 padding :10px;
@@ -90,14 +92,16 @@ padding :10px;
 #Skills ul ul{
 width: 45vw;
 border-radius: 20px;
+border: solid #E6D7BB 2px;
 background-color: #e3b96b;
 margin-top: 15px;
 padding :10px;
 }
 
 .profport{
+color: #e3b96b;
  padding-left: 5px;
- border-left: solid 2px white;
+ border-left: solid 2px #e3b96b;
  font-size: 2vw;
 }
 p{
@@ -113,7 +117,14 @@ h2{
 }
 h3{
   font-size: 2vw;
-  border-bottom: solid white 1px;
+  color: #e3b96b;
+  border-bottom: solid #e3b96b 2px;
+  margin-bottom: 15px;
+}
+ul>h3{
+  color: white;
+  border-bottom: solid white 2px;
+  margin-bottom: 20px;
 }
 #Projects> ul {
   justify-content: space-between;
@@ -130,6 +141,8 @@ h3{
   position: relative;
   padding: 0;
   margin: 5px auto;
+  border: solid #e3b96b 5px;
+  border-radius: 55px;
 }
 
 .box > a > figure{
@@ -185,11 +198,30 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #E6D7BB;
 }
-
-.container {
-  border-radius: 5px;
-  padding: 20px;
+.top{
+  width: 80px;
+  height: 80px;
+  background-color: #222831;
+  border: none;
+  font-size: 150%;
+  font-family: 'Open Sans', sans-serif;
+  border-top-left-radius: 70px;
+  border-top: solid white 2px;
+  border-left: solid white 2px;
+  color: white;
+  position: fixed;
+  bottom: -10px;
+  right: 0px;
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+.top:hover{
+  border-top: solid #e3b96b 5px;
+  border-left: solid #e3b96b 5px;
+}
+
 footer{
   justify-content: space-between;
   display: flex;
@@ -228,10 +260,11 @@ footer>ul div:hover{
 .contactinfo p{
   color: white;
   list-style: none;
-  margin-top: 1.5vw;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 footer ul{
-  padding: 10px 60px;
+  padding: 10px 35px;
 }
 
 footer ul a{
