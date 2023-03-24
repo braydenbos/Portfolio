@@ -69,11 +69,13 @@ h1{
   margin-left: 2.7vw;
   margin-top: 10px;
   border-radius: 20px;
+  width: 620px;
 }
 #AboutMe #frontimg{
   margin-left: 0;
   margin-top: 0;
   margin-right: 2.7vw;
+  width: 675px;
 }
 #AboutMe div,#Skills div{
   justify-content: space-between;
