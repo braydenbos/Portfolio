@@ -18,10 +18,10 @@ body{
     overflow-x: hidden;
     color:#f0f0f0;
   }
-  a.active,a:hover{
+a.active,a:hover{
     border-left: 5px solid #e3b96b;
     color: #e3b96b;
-  }
+}
 
 
 header {
@@ -69,13 +69,13 @@ h1{
   margin-left: 2.7vw;
   margin-top: 10px;
   border-radius: 20px;
-  width: 620px;
+  width: 41.5vw;
 }
 #AboutMe #frontimg{
   margin-left: 0;
   margin-top: 0;
   margin-right: 2.7vw;
-  width: 675px;
+  width: 45vw;
 }
 #AboutMe div,#Skills div{
   justify-content: space-between;
@@ -86,16 +86,17 @@ h1{
 #AboutMe ul ul{
 width: 45vw;
 height: 12vw;
-border-radius: 20px;
-border: solid #E6D7BB 2px;
+border-left: solid #e3b96b 2px;
+border-right: solid #e3b96b 2px;
 margin-top: 35px;
 padding :10px;
 }
 #Skills ul ul{
 width: 45vw;
-border-radius: 20px;
-border: solid #E6D7BB 2px;
+border-left: solid #e3b96b 2px;
+border-right: solid #e3b96b 2px;
 margin-top: 15px;
+margin-bottom: 35px;
 padding :10px;
 }
 .profport{
@@ -109,7 +110,7 @@ p{
 }
 .description{
   width: 45vw;
-  font-size: 1.35vw;
+  font-size: 1.6vw;
 }
 
 h2{
@@ -129,8 +130,6 @@ h3{
   margin-bottom: 15px;
 }
 ul>h3{
-  color: white;
-  border-bottom: solid white 2px;
   margin-bottom: 20px;
 }
 #Projects> ul {
@@ -148,7 +147,7 @@ ul>h3{
   position: relative;
   padding: 0;
   margin: 5px auto;
-  border: solid #e3b96b 5px;
+  border: solid #e3b96b 4px;
   border-radius: 55px;
 }
 
@@ -173,7 +172,7 @@ ul>h3{
   bottom: 0;
   left: 0;
   padding: 15px;
-  color: rgb(240, 240, 240);
+  color: #f0f0f0;
   width: 100%;
   height: 100%;
   background:linear-gradient(transparent,60%,black);
@@ -181,6 +180,12 @@ ul>h3{
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+}
+#first{
+  margin-left: 0;
+}
+#last{
+  margin-right: 0;
 }
 input[type=text], select, textarea {
   width: 100%;
