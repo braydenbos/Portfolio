@@ -37,7 +37,7 @@ header a , header p {
     border-right: 3px solid black;
 }
 .git:hover{
-    border-left: 5px solid #e3b96b;
+    border-right: 5px solid #e3b96b;
     color: #e3b96b;
 }
 .main{
@@ -67,6 +67,18 @@ h2{
     font-size: 3vw;
     color: #e3b96b;
 }
+li{
+    margin: 10px;
+    font-size: 1.5vw;
+}
+li a{
+    color:#e3b96b;
+}
+li a:hover{
+    color: #E6D7BB;
+    border: 0;
+}
+  
 p{
     margin-bottom: 50px;
     font-size: 1.5vw;
