@@ -117,7 +117,7 @@ h2{
   font-size: 5vw;
 }
 h2 a{
-  color:#e3b96b;
+  color:#cc983d;
 }
 h2 a:hover{
   color: #E6D7BB;
@@ -147,8 +147,11 @@ ul>h3{
   position: relative;
   padding: 0;
   margin: 5px auto;
-  border: solid #e3b96b 4px;
+  border: solid #cc983d 4px;
   border-radius: 55px;
+}
+.box:hover{
+  border: solid #E6D7BB 4px;
 }
 
 .box > a > figure{
@@ -199,7 +202,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #e3b96b;
+  background-color: #cc983d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -209,6 +212,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #E6D7BB;
+  color:#0b111c;
 }
 .top{
   width: 80px;
@@ -245,12 +249,12 @@ footer{
 }
 
 footer>ul div{
-  border: solid 2px  #e3b96b;
+  border: solid 2px  #cc983d;
   border-radius: 5px;
   padding: 20px;
   font-style: italic;
   background-color: transparent;
-  color: #e3b96b;
+  color: #cc983d;
   text-decoration: none;
   width: 25vw;
 }
@@ -280,13 +284,13 @@ footer ul{
 }
 
 footer ul a{
-  color: #e3b96b;
+  color: #cc983d;
 }
 
 footer ul a:hover{
   color: #E6D7BB;
 }
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 1070px) {
 
   header{
   height: auto;
@@ -349,7 +353,7 @@ footer ul a:hover{
   }
   
   .box{
-  border-radius: 25px;
+  border-radius: 55px;
   }
   
   input[type=text], select, textarea{
@@ -360,4 +364,11 @@ footer ul a:hover{
   input[type=submit]{
   font-size: 4vw;
   }
+  footer{
+    display: block;
   }
+  
+footer>ul div {
+  width: auto;
+  }
+}
