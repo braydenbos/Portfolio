@@ -300,13 +300,20 @@ footer ul a:hover{
 
   header{
   height: auto;
+  display: flex;
+  justify-content: center;
   }
 
   header a{
-  float: none;
-  display: block;
-  text-align: center;
-  border-left: none;
+    float: none;
+    display: block;
+    text-align: center;
+    border-left: none;
+    width: 49vw;
+    }
+  header a:hover{
+    border-right: 5px solid #e3b96b;
+    color: #e3b96b;
   }
   
   section:first-of-type{
