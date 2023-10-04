@@ -348,7 +348,7 @@ footer ul a:hover{
     width: 95%;
   }
   #Skills ul ul{
-  height: 40vh;
+  height: 70vw;
   }
   
   .profport{
@@ -387,11 +387,16 @@ footer ul a:hover{
   footer{
     display: block;
     text-align: center;
+    padding-bottom: 100px;
   }
   
   footer>ul div {
   width: auto;
   }
+
+  .contactinfo p {
+    font-size: 30px;
+}
   .top{
     width: 120px;
     height: 120px;
