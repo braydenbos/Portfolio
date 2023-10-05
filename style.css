@@ -220,28 +220,24 @@ input[type=submit]:hover {
   width: 80px;
   height: 80px;
   background-color: black;
-  border: none;
   font-size: 150%;
-  font-family: 'Open Sans', sans-serif;
-  border-top-left-radius: 70px;
-  border-top: solid white 2px;
-  border-left: solid white 2px;
+  border-radius: 20px;
+  border: solid white 2px;
   color: white;
   position: fixed;
-  bottom: -10px;
-  right: 0px;
-  text-decoration: none;
+  right: 2.5vw;
+  bottom: 2.5vw;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 .top:hover{
-  border-top: solid #e3b96b 4px;
-  border-left: solid #e3b96b 4px;
+  border: solid #e3b96b 4px;
 }
 
+
 footer{
-  justify-content: space-between;
+  justify-content: left;
   display: flex;
   margin-top: 9px;
   bottom: 0;
@@ -336,7 +332,7 @@ footer ul a:hover{
   }
 
   h2{
-    font-size: 10vw;
+    font-size: 15vw;
   }
 
   h3{
@@ -344,7 +340,7 @@ footer ul a:hover{
   }
   
   #AboutMe #frontimg{
-  width: 100%;
+  width: 95%;
   }
 
   #frontimg{
@@ -358,8 +354,12 @@ footer ul a:hover{
   #AboutMe ul ul{
     width: 95%;
   }
+  #Skills div{
+    display: block;
+  }
   #Skills ul ul{
-  height: 40vh;
+  height: 25vh;
+  width: 95%;
   }
   
   .profport{
@@ -416,17 +416,10 @@ footer ul a:hover{
   }
 
   .contactinfo p {
-    font-size: 30px;
+    font-size: 25px;
 }
   .top{
-    width: 80px;
-    height: 80px;
-    border-radius: 20px;
-    border: solid white 2px;
-    right: 10px;
-    bottom: 10px;
-  }
-  .top:hover{
-    border: solid #e3b96b 4px;
-  }
+    width: 100%;
+    right: auto;
+  }  
 }
