@@ -443,7 +443,13 @@ footer ul a:hover{
     font-size: 50px;
     margin: 0;
   }
-
+  footer div{
+    justify-content: space-around;
+  }
+  footer ul{
+    padding: 0;
+    word-break: break-all
+  }
   .contactinfo p {
     font-size: 25px;
 }

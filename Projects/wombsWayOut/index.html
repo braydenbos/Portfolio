@@ -11,12 +11,15 @@
 <body>
     <header id="header">
         <a class="main" href="../..#Projects">Back</a>
-        <p><i class="fa-solid fa-user-group"></i> 9 </p>
-        <p><i class="fa-solid fa-clock"></i> 6W</p>
-        <p><i class="fab fa-unity"></i></p>
-        <a target="_blank" class="link" href="https://github.com/AM-Asghari/WombsWayOut"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" class="link" href="https://www.stedelijk.nl/nl/tentoonstellingen/general-idea"><i class="fa-solid fa-link"></i></a>
-
+        <ul>
+            <p><i class="fa-solid fa-user-group"></i> 9 </p>
+            <p><i class="fa-solid fa-clock"></i> 6W</p>
+        </ul>
+        <ul>
+            <p><i class="fab fa-unity"></i></p>
+            <a target="_blank" class="link" href="https://github.com/AM-Asghari/WombsWayOut"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" class="link" href="https://www.stedelijk.nl/nl/tentoonstellingen/general-idea"><i class="fa-solid fa-link"></i></a>
+        </ul>
     </header>
     <main>
         <h1>Womb's Way Out</h1>
@@ -30,17 +33,17 @@
             The game has 3 enemies:
             <li>
                 <span style="color: #cc983d;">[MAIN]</span> The hook <br>
-                <img class="enemy" src="Hook.gif" alt=""> <br>
+                <img class="small" src="Hook.gif" alt=""> <br>
                 This enemy kills you on touch
             </li>
             <li>
                 Alcohol <br>
-                <img class="enemy" src="Bot.gif" alt=""> <br>
+                <img class="small" src="Bot.gif" alt=""> <br>
                 This enemy adds a distortion effect to your screen and inverts your inputs
             </li>
             <li>
                 Cigarette <br>
-                <img class="enemy" src="Cig.gif" alt=""> <br>
+                <img class="small" src="Cig.gif" alt=""> <br>
                 This enemy adds a fog effect to your screen
             </li>
         </p>
@@ -56,11 +59,73 @@
         <p>
             Here are some snippets of code that I wrote with some explanations underneath
         </p>
-        <img src="LensDistortFadeIn.png" alt="">
+        <h4>Lens distortion fade in</h4>
+        <img class="small" src="LensDistortFadeIn.png" alt="block of code that says
+        if (hit && currTime < time)
+        {
+            if (lensDistortion.intensity.value < 0.7)
+            {
+                lensDistortion.intensity.value += Time.deltaTime* distortSpeed;
+            }
+            if (aberration.intensity.value < 1)
+            {
+                aberration.intensity.value += Time.deltaTime * aberrationSpeed;
+            }
+            currTime += Time.deltaTime;
+        }
+        ">
         <p>
-            In this script I made an if statement that checks if the bottle enemy has been hit 
+            In this script I made an if statement that checks if the bottle enemy has been hit and then changes some variable on the post processing.
         </p>
-        <video poster="Images/" src="Videos/" controls></video>
+        <h4>Lens distortion fade out</h4>
+        <img class="small" src="LensDistortFadeOut.png" alt="block of code that says
+        else if(lensDistortion.intensity.value > 0|| aberration.intensity.value >0)
+        {
+            if(lensDistortion.intensity.value > 0)
+            {
+                lensDistortion.intensity.value -= Time.deltaTime * distortSpeed;
+            }
+            if(aberration.intensity.value > 0)
+            {
+                aberration.intensity.value -= Time.deltaTime * aberrationSpeed;
+            }
+        }
+        ">
+        <p>This peace of code checks if the effect should be deactivated and if so slowly does that. </p>
+        <h4>Smoke fade in</h4>
+        <img class="small" src="SmokeFXFadeIn.png" alt="block of code that says
+        if (hit && currTime < time)
+        {
+            currTime += Time.deltaTime;
+            if (RenderSettings.fogDensity < 0.2)
+            {
+                RenderSettings.fogDensity += Time.deltaTime * fogIncrease;
+            }
+            if (colorFade < 1)
+            {
+                colorFade += Time.deltaTime * colorIncrease;
+                RenderSettings.fogColor = new Color(0.6f + 0.4f * colorFade, 0.3f + 0.5f * colorFade, 0.3f + 0.5f * colorFade);
+            }
+        }
+        ">
+        <p>This code first checks if it was hit by the cigarette enemy and if so increases the smoke effect and makes the color white.</p>
+        <h4>Smoke fade out</h4>
+        <img class="small" src="SmokeFXFadeout.png" alt="block of code that says
+        else if (RenderSettings.fogDensity > 0.04 || colorFade > 0)
+        {
+            if (RenderSettings.fogDensity > 0.04)
+            {
+                RenderSettings.fogDensity -= Time.deltaTime * fogIncrease;
+            }
+            else
+            {
+                colorFade -= Time.deltaTime * colorIncrease;
+                RenderSettings.fogColor = new Color(0.6f + 0.4f * colorFade, 0.3f + 0.5f * colorFade, 0.3f + 0.5f * colorFade);
+            }
+        }
+        ">
+        <p>This code checks if the smoke effect had been active long enough and then changes the smoke back to red.</p>
+
     </main>
 </body>
 </html>
