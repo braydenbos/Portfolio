@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3be81ce6d6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Input Output</title>
+</head>
+<body>
+    <header id="header">
+        <a class="main" href="../..#Projects">Back</a>
+        <p><i class="fa-solid fa-user-group"></i> 2</p>
+        <p><i class="fa-solid fa-clock"></i> 10W</p>
+        <p><i class="fa-solid fa-u"></i></p>
+    </header>
+    <main>
+        <h1>Input Output</h1>
+        <img src="Inp-Out-FrontIMG.PNG" alt="The logo of Unreal engine">
+        <h2>The Project</h2>
+        <p>
+            This project was made in unreal engine using using blueprints and a add on called <a href="https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin">Arduino Serial Communication Plugin</a>. 
+            The project used a external device called a arduino we used a gyroscope to calculate the angle at which the arduino was pointed.
+            A LED lights with different colors to as an indicator.
+            A microphone that detects your sound.
+        </p>
+        <h2>My Part</h2>
+        <h3>AI</h3>
+        <p>
+            In this project I worked on a enemy AI that would roam around the level mindlessly until you made a sound.
+            The AI would detect how loud you are talking and would go towards you closer the louder you are.
+            The AI would also make noises so you could know were it is when you made a noise as a response.
+        </p>
+        <h3>Controller</h3>
+        <p>
+            I made a custom controller made with a arduino, gyroscope and 5 LED's. 
+            I used the unreal engine blueprints to convert the gyroscopes angle into a float.
+            Then I used that float as input to move the player.
+            The second part of the controller were the 5 LED's which would light up one by one the closer you got to the enemy.
+        </p>
+        <h3>Other Inputs/Outputs</h3>
+        <p>
+            The last input was a microphone that was inside my headphones this input was converted in a base value dB and saved in a float.
+            This input then triggered the enemy to move towards the player.
+            The last output was a speaker that was also inside my headphones this was done by the build in unreal engine sound system.
+        </p>
+        <video poster="Images/" src="Videos/" controls></video>
+    </main>
+</body>
+</html>

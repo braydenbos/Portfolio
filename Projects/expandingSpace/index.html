@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3be81ce6d6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Expanding Space</title>
+</head>
+<body>
+    <header id="header">
+        <a class="main" href="../..#Projects">Back</a>
+        <p><i class="fa-solid fa-user-group"></i> 6</p>
+        <p><i class="fa-solid fa-clock"></i> 10W</p>
+        <p><i class="fab fa-unity"></i></p>
+        <a target="_blank" class="link" href="https://github.com/braydenbos/ExSpaceBO"><i class="fa-brands fa-github"></i></a>
+    </header>
+    <main>
+        <h1>Expanding Space</h1>
+        <img src="Ex-Spa-FrontIMG.PNG" alt="A blue astronaut next to a storage sign">
+        <h2>The Project</h2>
+        <p>
+            In this project I worked in a group of six people with four artists and 2 developers.
+            The task of this project was to make a game that had the theme of space. We made the game 2D inside the 
+            Unity game engine and used sprite sheets to animate the characters.
+            As theme we chose puzzle and horror about a alien outbreak on a space ship were you have to escape.
+            The alien that was chasing you for a reason it was for your energy so you can distract it by turning
+            on electrical objects like generators.
+        </p>
+        <h2>My Part</h2>
+        <p>
+            In this project I made the User Interface and made a script to get animations in the UI.
+            I also made all the interactabel objects and a UI element that pointed towards the next object you had to use
+            if you didn't know were to go. During the whole project I also worked on helping the artist import the sprites and animations
+            and then put it on GitHub. At the end of the project I also made a Line collision script and added all
+            the sound in the game.
+        </p>
+        <video poster="Spa-Esc.png" src="Ex-Sp-Showreel.mp4" controls></video>
+        <h2>Line collision</h2>
+        <h3>Visualisation</h3>
+        <p>
+            Here is an explanation and visualisation on how my line collision script works.<br>
+            I was asked to make this script and had no idea of how to make it but eventualy I managed to make it work.
+            <br>
+            <br>
+            This is how:
+        </p>
+        <ul class="explanation">
+            <img src="lineCollisionVisualP1.png" alt="
+            When the Raycast
+            from 0 to 1 hits an object before reaching 1
+            it makes a new point 
+            for the line renderer to draw a line">
+            <img src="lineCollisionVisualP2.png" alt="
+            If the line renderer 
+                has more than 1 point 
+            it will make a new raycast from 0 to 2">
+        </ul>
+        <ul class="explanation">
+            <img src="lineCollisionVisualP3.png" alt="
+            If the raycast from 0 to 2 reaches 2 without hitting another object 
+            it will delete point 1 
+            and lower all other points by 1">
+            <img src="lineCollisionVisualP4.png" alt="
+            In this senario 
+            there would be no new points added 
+            and point 1 would be deleted 
+            making point 2 point 1 
+            removing the second raycast">
+        </ul>
+        <h3>Code</h3>
+        <p>
+            Here is the code I used:
+        </p>
+        <img style="height: auto;" src="LineCollisionEnter.png" alt="block of code saying
+        private void DetectCollisionEnter()
+        {
+            RaycastHit hit;
+            if (Physics.Linecast(to.position, rope.GetPosition(ropePositions.Count - 2), out hit, collMask))
+            {
+                if (rope.GetPosition(ropePositions.Count - 2) != hit.point)
+                {
+                    ropePositions.RemoveAt(ropePositions.Count - 1);
+                    AddPosToRope(hit.point);
+                }
+            }
+        }">
+        <p>
+            This block of code is how the line detects if it does collide and makes a new point on that possition.
+        </p>
+        <br>
+        <img style="height: auto;" src="LineCollisionExit.png" alt="block of code saying
+        private void DetectCollisionExits()
+        {
+            RaycastHit hit;
+            if (!Physics.Linecast(to.position, rope.GetPosition(ropePositions.Count - 3), out hit, collMask))
+            {
+                ropePositions.RemoveAt(ropePositions.Count - 2);
+            }
+        }">
+        <p>
+            This block of code is how the line detects if the previous point is no longer colliding and if not it will delete the point.
+        </p>
+    </main>
+</body>
+</html>
