@@ -127,6 +127,7 @@ h2{
 }
 h2 a{
   color:#cc983d;
+  text-decoration: underline;
 }
 h2 a:hover{
   color: #E6D7BB;
@@ -152,9 +153,7 @@ ul>h3{
 }
 .working{
   font-size: 4vw;
-  margin-bottom: 4vw;
   padding: 5px;
-  border-left: solid #e3b96b 3px;
 }
 .box{
   transition: transform .2s;
@@ -201,7 +200,7 @@ ul>h3{
   justify-content: space-between;
   flex-direction: column;
 }
-.box>a>div>div{
+.break{
   height: 100%;
 }
 #first{
