@@ -399,7 +399,7 @@ footer ul a:hover{
     display: block;
   }
   #Skills ul ul{
-  height: 25vh;
+  height: auto;
   width: 95%;
   }
   
