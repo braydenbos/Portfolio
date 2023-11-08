@@ -21,7 +21,7 @@ html{
 }
 
 body{
-    font-size: 16px;
+    font-size: 1.1vw;
     width: 100%;
     font-family: sans-serif;
     background-color:#0b111c;
@@ -35,7 +35,7 @@ a.active,a:hover{
 
 
 header {
-  height: 65px;
+  height: 95px;
   background-color: #222831;
   overflow: hidden;
   border-bottom: 3px solid black;
@@ -46,9 +46,9 @@ header a {
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 13px 2vw;
+  padding: 26px 2vw;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   border-left: 3px solid black;
 }
 header div:first-of-type a:first-of-type{
@@ -83,11 +83,9 @@ h1{
   border-left: var(--border);
   padding-left: 5px ;
   margin-top: 10px;
-  width: var(--width);
 }
 #frontimg{
   border-radius: 20px;
-  width: var(--width);
 }
 #AboutMe #frontimg{
   margin-left: 0;
@@ -100,14 +98,13 @@ h1{
 #AboutMe div,#Skills div{
   justify-content: space-between;
   display: flex;
-  margin-top: 10px;
 }
 
 #AboutMe ul ul{
 width: var(--width);
 border-left: var(--border);
 border-right: var(--border);
-margin-top: 35px;
+margin-top: 25px;
 padding :10px;
 }
 #Skills ul ul{
@@ -137,6 +134,7 @@ p{
 h2{
   font-size: 5vw;
   margin-top: 3.5vw;
+  margin-bottom: 1vw;
 }
 h2 a{
   color:#cc983d;
@@ -232,18 +230,20 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-size: 1.1vw;
 }
 
-input[type=submit] {
+button[type=submit] {
   background-color: #cc983d;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1.1vw;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #E6D7BB;
   color:#0b111c;
 }
@@ -382,6 +382,9 @@ footer ul a:hover{
   section:first-of-type{
   flex-direction: column;
   }
+  section{
+    width: calc(var(--width) * 2.3);
+  }
   
   h1{
   font-size: 12vw;
@@ -398,7 +401,6 @@ footer ul a:hover{
   #AboutMe #frontimg{
   width: 100%;
   height: auto;
-  aspect-ratio:1;
   }
 
   #frontimg{
@@ -462,7 +464,7 @@ footer ul a:hover{
   font-size: 5vw;
   }
   
-  input[type=submit]{
+  button[type=submit]{
   font-size: 5vw;
   width: 100%;
   }

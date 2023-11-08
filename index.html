@@ -7,6 +7,26 @@
     <script src="https://kit.fontawesome.com/3be81ce6d6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script>
+    function SubForm (){
+        $.ajax({
+            url:'https://api.apispreadsheets.com/data/pKGtKCGfdWx0Opu6/',
+            type:'post',
+            data:$("#myForm").serializeArray(),
+            success: function(){
+            alert("Message sent")
+            },
+            error: function(){
+            alert("Message not sent, pleas retry later")
+            }
+        });
+    }
+    </script>
     <title>Portfolio Brayden Bos</title>
 </head>
 
@@ -35,7 +55,7 @@
         </div>
     </header>
     <section>
-        <ul class="leftBlock">
+        <ul>
             <h1>Brayden Bos</h1>
             <p class="profport">
                 Character and Creature developer
@@ -175,8 +195,8 @@
                     </figure>
                     <div>
                         <div class="break"></div>
-                        <h3>Verticle slice</h3>
-                        <p>Verticle slice was my forth Unity project, Our tasked to remake a part of the game Hollow Knight.</p>
+                        <h3>Vertical slice</h3>
+                        <p>Vertical slice was my forth Unity project, Our tasked to remake a part of the game Hollow Knight.</p>
                     </div>
                 </a>
             </article>
@@ -239,7 +259,7 @@
                     <h3>Photoshop <i class="fa-solid fa-paintbrush"></i></h3>
                     <p>I am not that good in Photoshop but I can edit pictures in it and make placeholders.</p>
                 </ul>
-                <ul>                        
+                <ul style="margin-bottom: 0;">                        
                     <h3>Blender <i class="fas fa-blender"></i></h3>
                     <p>I am decent in geometry nodes but I am not that good at sculpting and rigging</p>
                 </ul>
@@ -253,7 +273,7 @@
                     <h3>Unreal engine <i class="fas fa-lightbulb"></i></h3>
                     <p>I am a starter in unreal engine I know how to use blue prints and I like to texture in it.</p>
                 </ul>
-                <ul>
+                <ul style="margin-bottom: 0;">
                     <h3><i class="fa-solid fa-c"></i><i class="fas fa-plus"></i><i class="fas fa-plus"></i></h3>
                     <p>I know how to use C plus plus and I can translate something from cpp to cs.</p>                   
                 </ul>
@@ -263,18 +283,17 @@
     <section id="Contact">
         <h2>Contact</h2>
         <div>
-            <form action="https://script.google.com/macros/s/AKfycbw3VP3ZkHTKaEJqBhUyisoEQghruCuJGuxQem0vcvHhK6xIi0tSeMKvgj3EddX_QsLz/exec">
+            <form id="myForm">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name..">
           
               <label for="email">E-mail</label>
               <input type="text" id="email" name="email" required placeholder="Your E-mail..">
                     
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write me something.." required style="height:100px"></textarea>
-          
-              <input type="submit" value="Submit">
+              <label for="subject">Message</label>
+              <textarea id="subject" name="message" placeholder="Write me something.." required style="height:100px"></textarea>
             </form>
+            <button type="submit" onclick="SubForm()">Submit</button>
           </div>
     </section>
     <a class="top" href="#header">
