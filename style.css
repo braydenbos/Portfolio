@@ -35,7 +35,7 @@ a.active,a:hover{
 
 
 header {
-  height: 95px;
+  height: 64px;
   background-color: #222831;
   overflow: hidden;
   border-bottom: 3px solid black;
@@ -46,9 +46,9 @@ header a {
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 26px 2vw;
+  padding: 15px 2vw;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 27px;
   border-left: 3px solid black;
 }
 header div:first-of-type a:first-of-type{
@@ -68,7 +68,7 @@ img{
 section{
   width: var(--widthMain);
   margin:0 auto;
-  margin-top: 1vw;
+  margin-top: 5vw;
   margin-bottom: 1vw;
 }
 section:first-of-type{
@@ -86,6 +86,7 @@ h1{
 }
 #frontimg{
   border-radius: 20px;
+  float: right;
 }
 #AboutMe #frontimg{
   margin-left: 0;
@@ -105,7 +106,7 @@ width: var(--width);
 border-left: var(--border);
 border-right: var(--border);
 margin-top: 25px;
-padding :10px;
+padding : 1px 10px;
 }
 #Skills ul ul{
 width: var(--width);
@@ -115,6 +116,9 @@ border-right: var(--border);
 margin-top: 15px;
 margin-bottom: 35px;
 padding :10px;
+}
+#Skills ul ul:first-of-type{
+  margin-top: 0;
 }
 .profport{
   color: var(--mainColor);
@@ -134,7 +138,7 @@ p{
 h2{
   font-size: 5vw;
   margin-top: 3.5vw;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
 }
 h2 a{
   color:#cc983d;
@@ -157,7 +161,7 @@ ul>h3{
 #Projects> ul {
   justify-content: space-around;
   display: flex;
-  margin-top: 0.5vw;
+  margin-top: 2vw;
 }
 #Projects ul article{
   margin: 10px;
@@ -396,11 +400,13 @@ footer ul a:hover{
 
   h3{
     font-size: 5.5vw;
+    margin-bottom: 0;
   }
   
   #AboutMe #frontimg{
   width: 100%;
   height: auto;
+  margin: 0;
   }
 
   #frontimg{
@@ -408,7 +414,7 @@ footer ul a:hover{
   }
 
   #AboutMe div{
-    display: block;
+    flex-direction: column;
   }
 
   #AboutMe ul ul{
@@ -447,6 +453,7 @@ footer ul a:hover{
   }
 
   #Skills div ul, #AboutMe div ul:last-of-type{
+    margin-top: 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
