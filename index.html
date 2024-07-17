@@ -27,6 +27,7 @@
         });
     }
     </script>
+    <script src="SlideShow.js"></script>
     <title>Portfolio Brayden Bos</title>
 </head>
 
@@ -58,23 +59,23 @@
         <ul>
             <h1>Brayden Bos</h1>
             <p class="profport">
-                Character and Creature developer
+                Tool developer
             </p>
             <p class="description">
-                Hi there! I'm a character and creature developer, 
-                and I would like to show you what I can do. 
-                My portfolio has lots of different characters and creatures that I've created for different types of projects. 
-                I'm always eager to learn especially about things I'm not familiar with, 
-                and I'm excited to work on future project to create cool characters and creatures.
+                Hi there! I'm a tool developer, and I would like to show you what I can do. 
+                My portfolio has lots of different tools and applications that I've created for various projects. 
+                I'm always eager to learn, especially about things I'm not familiar with, and I'm excited to work on future projects to create innovative tools and applications.
                 <br>
                 <br>
-                My goal is to be a Gamedeveloper that works on making the machanics of the character and creatures.
-                This means I would like to work on the things like attacks, individual mechanics, character sketches and their lore.
-                I also would write code in the direction of characters and creatures like making the individual mechanics.
-                Even tho this is my preferance I would happily work as an regular developer with making regular code.
+                My goal is to be a game developer that focuses on developing tools to enhance game development processes. 
+                This means I would like to work on things like development tools, debugging utilities, and performance optimization tools. 
+                I also write code to create these tools, ensuring they are efficient and user-friendly for developers.
                 <br>
                 <br>
-                Thank you for looking at my portfolio and I hope you are impressed or at least interested.
+                Even though this is my preference, I would happily work as a regular developer, writing code for various types of projects.
+                <br>
+                <br>
+                Thank you for looking at my portfolio, and I hope you are impressed or at least interested.
             </p>
         </ul>
         <ul>
@@ -90,16 +91,12 @@
                         <img src="Images/NeoN-Log.png" alt="The neonorigins logo">
                     </figure>
                     <div>
-                        <div class="working">
-                            <p style="border-left: solid #e3b96b 3px;padding-left: 5px;">Working on</p>
-                        </div>
+                        <div class="break"></div>
                         <h3>Operation starfall</h3>
                         <p>Operation starfall is a project thast started in 2021 that i joined in september 2023 that uses the Unity engine</p>
                     </div>
                 </a>
             </article>
-        </ul>
-        <ul>
             <article class="box">
                 <a href="Projects/expandingSpace">
                     <figure>
@@ -164,56 +161,56 @@
             </article>
         </ul>
         <ul>
-            <article class="box">
-                <a href="Projects/helloYou">
-                    <figure>
-                        <img src="Images\Python-gam.png" alt="Two houses and a car made from ASCII art">
-                    </figure>
-                    <div>
+            <div class="slideshow-container">
+                <a href="Projects/helloYou" class="mySlides fade" style="display: block;">
+                    <img src="Images\Python-gam.png" style="width:100%">
+                    <div style="align-items: center;">
                         <div class="break"></div>
-                        <h3>HELLO YOU</h3>
-                        <p>This was the second game that I made, it's a choose your own adventure game inside Python.</p>
+                        <h3 style="margin-bottom: 1vw; text-align: center;">HELLO YOU</h3>
                     </div>
                 </a>
-            </article>
-            <article class="box">
-                <a href="Projects/arcadeMachenics">
-                    <figure>
-                        <img src="Images\Arcade-mec.png" alt="A miner next to a dead miner">
-                    </figure>
-                    <div>
+          
+                <a href="Projects/arcadeMachenics" class="mySlides fade">
+                    <img src="Images\Arcade-mec.png" style="width:100%">
+                    <div style="align-items: center;">
                         <div class="break"></div>
-                        <h3>Arcade mechanics</h3>
-                        <p>Arcade mechanics was my first Unity project and the first project where I used blender.</p>
+                        <h3 style="margin-bottom: 1vw; text-align: center;">Arcade Machenics</h3>
                     </div>
                 </a>
-            </article>
-            <article class="box">
-                <a href="Projects/verticalSlice">
-                    <figure>
-                        <img src="Images\Verticle-sli.png" alt="A bug jumping off a object">
-                    </figure>
-                    <div>
+          
+                <a href="Projects/verticalSlice" class="mySlides fade">
+                    <img src="Images\Verticle-sli.png" style="width:100%">
+                    <div style="align-items: center;">
                         <div class="break"></div>
-                        <h3>Vertical slice</h3>
-                        <p>Vertical slice was my forth Unity project, Our tasked to remake a part of the game Hollow Knight.</p>
+                        <h3 style="margin-bottom: 1vw; text-align: center;">vertical Slice</h3>
                     </div>
                 </a>
-            </article>
-            <article class="box">
-                <a href="Projects/planetProtectors">
-                    <figure>
-                        <img src="Images\Planet-pro.png" alt="A space man aiming his gun at six aliens">
-                    </figure>
-                    <div>
+     
+                <a href="Projects/planetProtectors" class="mySlides fade">
+                    <img src="Images\Planet-pro.png" style="width:100%">
+                    <div style="align-items: center;">
                         <div class="break"></div>
-                        <h3>Planet protectors</h3>
-                        <p>Planet Protectors was the first game I have ever made in the scratch engine.</p>
+                        <h3 style="margin-bottom: 1vw; text-align: center;">Planet protectors</h3>
                     </div>
                 </a>
-            </article>
+               
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+          
+            </div>
         </ul>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
     </section>
+
+        
     <section id="AboutMe">
         <h2>About Me / <a target="_blank" href="BraydenBosCV.pdf">CV Link</a></h2>
         <div>
