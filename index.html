@@ -12,21 +12,6 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous">
     </script>
-    <script>
-    function SubForm (){
-        $.ajax({
-            url:'https://api.apispreadsheets.com/data/pKGtKCGfdWx0Opu6/',
-            type:'post',
-            data:$("#myForm").serializeArray(),
-            success: function(){
-            alert("Message sent")
-            },
-            error: function(){
-            alert("Message not sent, pleas retry later")
-            }
-        });
-    }
-    </script>
     <script src="SlideShow.js"></script>
     <title>Portfolio Brayden Bos</title>
 </head>
@@ -86,26 +71,44 @@
         <h2>Projects</h2>
         <ul>
             <article class="box">
-                <a href="Projects/OperationStarfall">
+                <a href="Projects/gobling">
+                    <figure>
+                        <img src="Images/Gobling.png" alt="The neonorigins logo">
+                    </figure>
+                    <div>
+                        <div class="break"></div>
+                        <h3>Gobling</h3>
+                        <p>
+                            A project for my test exams. 
+                            In a group of 8 people we were tasked to make a game including AI. 
+                            We chose to make a AI customer.
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </ul>
+        <ul>
+            <article class="box">
+                <a href="Projects/operationStarfall">
                     <figure>
                         <img src="Images/NeoN-Log.png" alt="The neonorigins logo">
                     </figure>
                     <div>
                         <div class="break"></div>
                         <h3>Operation starfall</h3>
-                        <p>Operation starfall is a project thast started in 2021 that i joined in september 2023 that uses the Unity engine</p>
+                        <p>A project thast started in 2021 that I joined in september 2023 that uses the Unity engine</p>
                     </div>
                 </a>
             </article>
             <article class="box">
-                <a href="Projects/expandingSpace">
+                <a href="Projects/cinekidStarBorn">
                     <figure>
-                        <img src="Images\Expanding-spa.png" alt="A blue astronaut next to a storage sign">
+                        <img src="Images/image.jpeg" alt="A large blue rocket with a chair and control panel in it with a tent next to it">
                     </figure>
                     <div>
                         <div class="break"></div>
-                        <h3>Expanding space</h3>
-                        <p>Expanding space was a group project and the second project that I worked on using the Unity engine.</p>
+                        <h3>StarBorn</h3>
+                        <p>A MR game made for the CineKid festival for kids. The game was made to teach kids to be stuborn, yes more stuborn don't ask me why</p>
                     </div>
                 </a>
             </article>
@@ -117,21 +120,21 @@
                     <div>
                         <div class="break"></div>
                         <h3>Womb's way out</h3>
-                        <p>Womb's way out was a project for the General idea exposition in the Stedelijk Museum in Amsterdam.</p>
+                        <p>A project for the General idea exposition in the Stedelijk Museum in Amsterdam.</p>
                     </div>
                 </a>
             </article>
         </ul>
         <ul>
             <article class="box">
-                <a href="Projects/towerDefense">
+                <a href="Projects/operatieInfiltratie">
                     <figure>
-                        <img src="Images\Tower-def.png" alt="A tower shooting at two enemies">
+                        <img src="Images/Operatie-inf.jpg" alt="A tower shooting at two enemies">
                     </figure>
                     <div>
                         <div class="break"></div>
-                        <h3>Tower defence</h3>
-                        <p>Tower defence was a indavitual project that I worked on and my third Unity project.</p>
+                        <h3>Operatie Infiltratie</h3>
+                        <p>A project made for the vpro made by me and others during our internships at XR Lab.</p>
                     </div>
                 </a>
             </article>
@@ -143,19 +146,19 @@
                     <div>
                         <div class="break"></div>
                         <h3>Dungeons and dragons</h3>
-                        <p>Im my free time I play dnd with friends which lets me create my own characters</p>
+                        <p>Im my free time I play dnd with friends to express my creativity in other ways than video games</p>
                     </div>
                 </a>
             </article>
             <article class="box">
                 <a href="Projects/inputOutput">
                     <figure>
-                        <img src="Images\Input-out.png" alt="A part of a Unreal engien blueprint">
+                        <img src="Images/Input-out.png" alt="A part of a Unreal engien blueprint">
                     </figure>
                     <div>
                         <div class="break"></div>
                         <h3>Input output</h3>
-                        <p>Input Output is my most recent project where I am making a game using a Arduino and Unreal Engine.</p>
+                        <p>A friend and I were making a game using a Arduino and Unreal Engine.</p>
                     </div>
                 </a>
             </article>
@@ -163,7 +166,7 @@
         <ul>
             <div class="slideshow-container">
                 <a href="Projects/helloYou" class="mySlides fade" style="display: block;">
-                    <img src="Images\Python-gam.png" style="width:100%">
+                    <img src="Images/Python-gam.png" style="width:100%">
                     <div style="align-items: center;">
                         <div class="break"></div>
                         <h3 style="margin-bottom: 1vw; text-align: center;">HELLO YOU</h3>
@@ -171,7 +174,7 @@
                 </a>
           
                 <a href="Projects/arcadeMachenics" class="mySlides fade">
-                    <img src="Images\Arcade-mec.png" style="width:100%">
+                    <img src="Images/Arcade-mec.png" style="width:100%">
                     <div style="align-items: center;">
                         <div class="break"></div>
                         <h3 style="margin-bottom: 1vw; text-align: center;">Arcade Machenics</h3>
@@ -179,7 +182,7 @@
                 </a>
           
                 <a href="Projects/verticalSlice" class="mySlides fade">
-                    <img src="Images\Verticle-sli.png" style="width:100%">
+                    <img src="Images/Verticle-sli.png" style="width:100%">
                     <div style="align-items: center;">
                         <div class="break"></div>
                         <h3 style="margin-bottom: 1vw; text-align: center;">vertical Slice</h3>
@@ -187,25 +190,46 @@
                 </a>
      
                 <a href="Projects/planetProtectors" class="mySlides fade">
-                    <img src="Images\Planet-pro.png" style="width:100%">
+                    <img src="Images/Planet-pro.png" style="width:100%">
                     <div style="align-items: center;">
                         <div class="break"></div>
                         <h3 style="margin-bottom: 1vw; text-align: center;">Planet protectors</h3>
                     </div>
                 </a>
-               
+
+                <a href="Projects/towerDefense" class="mySlides fade">
+                    <img src="Images/Tower-def.png" style="width:100%">
+                    <div style="align-items: center;">
+                        <div class="break"></div>
+                        <h3 style="margin-bottom: 1vw; text-align: center;">Tower Defense</h3>
+                    </div>
+                </a>
+
+                <a href="Projects/expandingSpace" class="mySlides fade">
+                    <img src="Images/Expanding-spa.png" style="width:100%">
+                    <div style="align-items: center;">
+                        <div class="break"></div>
+                        <h3 style="margin-bottom: 1vw; text-align: center;">Expanding space</h3>
+                    </div>
+                </a>
+
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-          
             </div>
+            <br>
         </ul>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+        <div id="dots-container" style="text-align:center; margin-top: 20px;">
+            <script>
+                const numberOfSlides = document.querySelectorAll('.slideshow-container a').length - 2; 
+                const dotsContainer = document.getElementById('dots-container');
+                
+                for (let i = 1; i <= numberOfSlides; i++) {
+                    const dot = document.createElement('span');
+                    dot.classList.add('dot');
+                    dot.setAttribute('onclick', `currentSlide(${i})`);
+                    dotsContainer.appendChild(dot);
+                }
+            </script>        
         </div>
         
     </section>
@@ -219,28 +243,35 @@
             </ul>
             <ul>
                 <ul style="margin-top: 0;">
-                    <h3>Hobby's</h3>
+                    <h3>Hobbies</h3>
                     <p>
-                        In my free time I like to do many things like game and watch a show or movie but I also like to hang out with my friends and spent time with my familie.
-                        I also like to code in my free time and enjoy making small games to learn new things I also like learning new things in general.
-                        With a couple of friends I also play dungeons and dragons where I express my creativatiy.                    </p>
-                </ul>
-                <ul>
-                    <h3>Gamedeveloper</h3>
-                    <p>
-                        Through out my live I've wanted to be many things like astronaut, veterinary and engineer but when I was around 14 I knew I wanted to make something fun
-                        That I personaly would play so I took some coding classes and immediately realised that I was good at it.
-                        When it was time to choose what school I wanted to go to studing game development was my first choice and I don't regret that dessision one bit.
+                        In my free time, I enjoy a variety of activities, such as gaming, watching shows, or movies. 
+                        I also love spending time with my friends and family. 
+                        Coding is another hobby I’m passionate about; I often work on small games to learn new things and challenge myself. 
+                        In addition, I enjoy expanding my knowledge by exploring new topics. 
+                        One of my favorite pastimes is playing Dungeons & Dragons with a group of friends, where I can fully express my creativity.
                     </p>
                 </ul>
+                
                 <ul>
-                    <h3>Who am I?</h3>
+                    <h3>Game Developer</h3>
                     <p>
-                        My name is Brayden Bos I was born and live in The Netherlands but I'm also half Guyanese. 
-                        I have two siblings both are older (I'm the youngest of three) my siblings are my brother and my half brother.
-                        I also have three pets one cat named Mario and two bunnies Rocket and Bugs when I was younger I also had a dog named Pluto.
+                        Growing up, I considered many different career paths, from astronaut to veterinarian and engineer. 
+                        However, when I was about 14 years old, I realized I wanted to create something enjoyable—something I would personally love to play. 
+                        I took coding classes and quickly discovered that I had a natural talent for it. 
+                        When the time came to choose a school, studying game development was the obvious choice, and I’ve never looked back or regretted that decision.
                     </p>
                 </ul>
+                
+                <ul>
+                    <h3>Who Am I?</h3>
+                    <p>
+                        My name is Brayden Bos, and I was born and raised in the Netherlands, though I’m also half Guyanese. 
+                        I have two older siblings—my brother and my half-brother—making me the youngest of three. 
+                        I also have a cat named Mario and used to have a dog Pluto. 
+                        I love all kinds off animals even onece considered creepy.
+                    </p>
+                </ul>            
             </ul>    
         </div>
     </section>
@@ -250,48 +281,36 @@
             <ul>
                 <ul>
                     <h3>Unity <i class="fab fa-unity"></i></h3>
-                    <p>Unity is my main programming engine and I know how to navigate the engine very well.</p>
+                    <p>Unity is my primary development engine, and I am highly proficient in navigating and using it effectively.</p>
                 </ul>
                 <ul>
                     <h3>Photoshop <i class="fa-solid fa-paintbrush"></i></h3>
-                    <p>I am not that good in Photoshop but I can edit pictures in it and make placeholders.</p>
+                    <p>While I'm still improving, I can use Photoshop to edit images and create placeholders for projects.</p>
                 </ul>
-                <ul style="margin-bottom: 0;">                        
+                <ul>
                     <h3>Blender <i class="fas fa-blender"></i></h3>
-                    <p>I am decent in geometry nodes but I am not that good at sculpting and rigging</p>
+                    <p>I'm proficient with geometry nodes in Blender, though I'm still learning sculpting and rigging techniques.</p>
                 </ul>
-            </ul>    
+            </ul>
+            
             <ul>
                 <ul>
                     <h3><i class="fa-solid fa-c"></i><i class="fas fa-hashtag"></i></h3>
-                    <p>C# is the code language that I have used the most and know how to write decent scripts.</p>
+                    <p>I have extensive experience with C#, which I use to write robust scripts for various projects.</p>
                 </ul>
                 <ul>
-                    <h3>Unreal engine <i class="fas fa-lightbulb"></i></h3>
-                    <p>I am a starter in unreal engine I know how to use blue prints and I like to texture in it.</p>
+                    <h3>Unreal Engine <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="5 6 14 12"><path fill="currentColor" d="M6.35 9.5c-2.01 2.29-1.62 4.18-1.62 4.18s.55-1.3 1.88-2.68c.64-.63 1.11-.85 1.43-.85c.36 0 .53.26.53.5v4.64c0 .46-.3.56-.57.55a1.5 1.5 0 0 1-.45-.08C8.92 17.73 12.19 18 12.19 18l1.44-1.5h.04L15 17.63c2.39-1.42 3.55-4.05 3.55-4.05c-1.05 1.12-1.76 1.39-2.16 1.38c-.36 0-.51-.21-.51-.21c-.01-.1-.06-5.85.01-5.85c.42-.77 1.74-2.34 1.74-2.34c-2.47.49-3.82 2.1-3.82 2.1c-.4-.31-1.22-.26-1.22-.26c.38.21.76.81.76 1.32v4.93s-.85.73-1.47.73c-.38 0-.61-.21-.74-.38c-.09-.12-.14-.21-.14-.21v-6.1c-.07.06-.18.11-.29.11c-.14-.01-.28-.07-.37-.27c-.08-.15-.12-.38-.12-.7c0-1.13 1.28-1.87 1.28-1.87c-1.63.43-3.14 1.26-5.15 3.54"/></svg></h3>
+                    <p>As a beginner in Unreal Engine, I’m comfortable using Blueprints and enjoy working on texturing within the engine.</p>
                 </ul>
-                <ul style="margin-bottom: 0;">
+                <ul>
                     <h3><i class="fa-solid fa-c"></i><i class="fas fa-plus"></i><i class="fas fa-plus"></i></h3>
-                    <p>I know how to use C plus plus and I can translate something from cpp to cs.</p>                   
+                    <p>I have experience with C++, and I can translate code between C++ and C# when needed.</p>
                 </ul>
-            </ul>        
+            </ul>
         </div>
     </section>
     <section id="Contact">
         <h2>Contact</h2>
-        <div>
-            <form id="myForm">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..">
-          
-              <label for="email">E-mail</label>
-              <input type="text" id="email" name="email" required placeholder="Your E-mail..">
-                    
-              <label for="subject">Message</label>
-              <textarea id="subject" name="message" placeholder="Write me something.." required style="height:100px"></textarea>
-            </form>
-            <button type="submit" onclick="SubForm()">Submit</button>
-          </div>
     </section>
     <a class="top" href="#header">
         <b>Top</b>

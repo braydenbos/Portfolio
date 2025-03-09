@@ -131,6 +131,39 @@ video{
     width: 30vw;
     height: auto;
 }
+.character{
+    width: auto;
+    height: 40vh;
+    margin: 0 10px;
+}
+.characterList{
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Optional gap between the image and video */
+}
+
+/* Style for the video */
+.container video {
+    width: 48%; 
+    height: 75vh; 
+    object-fit: cover; 
+    margin-bottom: 0
+}
+
+/* Style for the image */
+.container img {
+    width: 48%;
+    height: 75vh; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 1070px) {
     p{
         font-size: 15px;
@@ -177,5 +210,15 @@ video{
     }     
     .explanation img{
     width: 100%;
+    }
+}
+    @media only screen and (max-width: 640px) {
+
+    .container video, 
+    .container img {
+        width: 100%;
+        height: auto;
+        display: block; 
+        margin: 0 auto;
     }
 }

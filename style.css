@@ -87,10 +87,13 @@ h1{
 #frontimg{
   border-radius: 20px;
   float: right;
+  object-fit: fill;
+  margin: auto;
+  margin-right: 0;
 }
 #AboutMe #frontimg{
   margin-left: 0;
-  margin-top: 0;
+  margin-top: auto;
   margin-right: 2.7vw;
   width: var(--width);
   height: var(--width);
@@ -227,7 +230,8 @@ ul>h3{
 }
 .slideshow-container {
   position: relative;
-  margin: 10px;
+  margin: 5px auto;
+  width: 97%;
 }
 
 .mySlides {
@@ -341,7 +345,7 @@ button[type=submit]:hover {
 .top{
   width: 80px;
   height: 80px;
-  background-color: black;
+  background-color: #172134;
   font-size: 150%;
   border-radius: 20px;
   border: solid white 2px;
@@ -531,14 +535,22 @@ footer ul a:hover{
   margin-top: 1vw;
   }
   
-  #Projects ul article {
+  .slideshow-container,
+  #Projects ul article{
   width: 95%;
   height: 30vh;
   margin: 5px auto;
   font-size: 0;
   }
+  .mySlides, .slideshow-container a img{
+    height: 100%;
+  }
   .img{
     align-items: normal;
+  }
+  #AboutMe #frontimg{
+    width: 95%;
+    margin: auto
   }
 
   #Skills div ul, #AboutMe div ul:last-of-type{
@@ -580,6 +592,7 @@ footer ul a:hover{
     margin: 0;
   }
   footer div{
+    margin-top: 20px;
     justify-content: space-around;
   }
   footer ul{
